@@ -146,9 +146,9 @@ src
 
 Images are provided below showing the implementation, execution flow, terminal output, notification processing, and final results.
 
-<p align="center">
+<!-- <p align="center">
   <img src="./src/components/1.png" width="800">
-</p>
+</p> -->
 
 <p align="center">
   <img src="./src/components/2.png" width="800">
@@ -162,9 +162,9 @@ Images are provided below showing the implementation, execution flow, terminal o
   <img src="./src/components/4.png" width="800">
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="./src/components/5.png" width="800">
-</p>
+</p> -->
 
 ---
 
