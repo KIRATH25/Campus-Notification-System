@@ -146,25 +146,25 @@ src
 
 Images are provided below showing the implementation, execution flow, terminal output, notification processing, and final results.
 
-<!-- <p align="center">
-  <img src="./src/components/1.png" width="800">
-</p> -->
-
 <p align="center">
-  <img src="./src/components/2.png" width="800">
+  <img src="./src/components/Screenshot 2026-06-10 115608.png" width="800">
 </p>
 
 <p align="center">
-  <img src="./src/components/3.png" width="800">
+  <img src="./src/components/Screenshot 2026-06-10 120117.png" width="800">
 </p>
 
 <p align="center">
-  <img src="./src/components/4.png" width="800">
+  <img src="./src/components/Screenshot 2026-06-10 121525.png" width="800">
 </p>
 
-<!-- <p align="center">
-  <img src="./src/components/5.png" width="800">
-</p> -->
+<p align="center">
+  <img src="./src/components/Screenshot 2026-06-10 130047.png" width="800">
+</p>
+
+<p align="center">
+  <img src="./src/components/Screenshot 2026-06-10 130219.png" width="800">
+</p>
 
 ---
 
