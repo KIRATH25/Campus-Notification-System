@@ -1,23 +1,70 @@
-# Campus Notification System
+# Getting Started with Create React App
 
-A notification prioritization system that fetches notifications from a secured API, assigns priority scores based on notification type and recency, and maintains the top 10 most important notifications.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Priority Order:
+## Available Scripts
 
-1. Placement
-2. Result
-3. Event
+In the project directory, you can run:
 
-Features:
+### `npm start`
 
-- Secure authentication
-- Notification retrieval
-- Priority score calculation
-- Top 10 ranking
-- Optimized notification management
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-By performing only the sorting array it shows me the time complexity of O(n log n), which is not eh 50% of required time optimised. So now we are going to proceed with the Min Heap which leads me to to the time O(log 10) ~~ O(n).
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-A Min Heap of fixed size 10 is used to efficiently maintain the highest priority notifications. Each incoming notification is assigned a priority score based on its type and recency. If the heap contains fewer than 10 notifications, the new notification is inserted directly. Otherwise, it is compared with the minimum priority notification currently in the heap. If the new notification has a higher priority score, the minimum element is removed and the new notification is inserted.
+### `npm test`
 
-This approach ensures that only the top 10 notifications are maintained at all times without sorting the entire dataset repeatedly. The effective time complexity becomes O(n log 10), which is approximately O(n), making the solution scalable for a large number of incoming notifications.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

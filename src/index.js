@@ -1,55 +1,14 @@
-const getNotifications = require(
-    "./notificationService"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
 );
 
-const getTopNotifications = require(
-    "./topNotifications"
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-async function main() {
-    try {
-        const notifications =
-            await getNotifications();
-                console.log(
-                    JSON.stringify(
-                        notifications,
-                        null,
-                        2
-                    )
-                );
-
-        const topNotifications =
-            getTopNotifications(
-                notifications,
-                10
-            );
-
-        console.log(
-            "\nTOP 10 PRIORITY NOTIFICATIONS\n"
-        );
-
-        topNotifications.forEach(
-            (
-                notification,
-                index
-            ) => {
-                console.log(
-                    `${index + 1}. ${
-                        notification.Type
-                    } | ${
-                        notification.Message
-                    } | Score: ${notification.priorityScore.toFixed(
-                        2
-                    )}`
-                );
-            }
-        );
-    } catch (error) {
-        console.error(
-            error.response?.data ||
-                error.message
-        );
-    }
-}
-
-main();
